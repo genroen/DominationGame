@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c1020" />
+  <meta name="description" content="Signal Dominion — a graph puzzle game. Cover every circle with the fewest signal points." />
+  <meta property="og:title" content="Signal Dominion" />
+  <meta property="og:description" content="43 handcrafted graph puzzles, random challenges and local competitive races. Free to play in your browser." />
+  <link rel="icon" href="assets/img/icon.png" type="image/png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Signal Dominion — Play in your browser</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="levels.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <div class="background-glow glow-one" aria-hidden="true"></div>
+  <div class="background-glow glow-two" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <button type="button" class="brand" data-action="home" aria-label="Signal Dominion home">
+        <span class="brand-mark"><span class="mark-core"></span><span class="mark-orbit orbit-a"></span><span class="mark-orbit orbit-b"></span></span>
+        <span class="brand-type"><strong>Signal <span>Dominion</span></strong><small>THE GRAPH PUZZLE</small></span>
+      </button>
+      <div class="top-actions">
+        <span class="online-dot"><span></span> OFFLINE READY</span>
+        <button type="button" id="quick-sound" class="icon-button" data-action="quick-sound" aria-label="Toggle sound effects" title="Toggle sound effects">♫</button>
+        <button type="button" id="quick-music" class="icon-button" data-action="quick-music" aria-label="Toggle background music" title="Toggle background music">♪</button>
+        <button type="button" class="icon-button home-icon" data-action="home" aria-label="Back to main menu" title="Main menu">⌂</button>
+      </div>
+    </header>
+    <main id="main" class="main" tabindex="-1"></main>
+    <footer class="site-footer"><span>NODE<span class="footer-accent">SMITH</span> GAMES · SIGNAL DOMINION</span><span>Made for curious minds <span aria-hidden="true">✦</span> Play anywhere</span></footer>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Please enable JavaScript to play Signal Dominion.</div></noscript>
+</body>
+</html>

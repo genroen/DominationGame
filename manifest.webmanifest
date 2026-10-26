@@ -1,0 +1,14 @@
+{
+  "name": "Signal Dominion",
+  "short_name": "Signal Dominion",
+  "description": "A graph-theory puzzle game with 43 campaign levels and exact Par scores.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0e1b",
+  "theme_color": "#0c1020",
+  "icons": [
+    { "src": "assets/img/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
